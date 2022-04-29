@@ -1,6 +1,6 @@
 <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <nav class="black lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">APK SCRIM</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">SCRIM</a>
       <ul class="right hide-on-med-and-down">
       <li><a href="index.php">HOME</a></li>
         <li><a href="ranktop.php">RANK TOP</a></li>
