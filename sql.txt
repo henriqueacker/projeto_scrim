@@ -1,0 +1,116 @@
+CREATE TABLE partidas(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	data date,
+	hora varchar(10),
+	status varchar(30)
+);
+
+CREATE TABLE jogador (
+  	id int(11) NOT NULL,
+  	nick varchar(50) NOT NULL,
+  	lane varchar(50) NOT NULL,
+  	lanesegundaria varchar(50) NOT NULL);
+
+CREATE TABLE usuario(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	email varchar(50),
+	senha varchar(50),
+	nick varchar(50));
+
+CREATE TABLE top(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	nick varchar(50) NOT NULL,
+  	posicao varchar(20) NOT NULL,
+  	vitoria double NOT NULL,
+	vitoria_porcentagem double NOT NULL,
+  	jogos int(11) NOT NULL,
+  	particicao_de_abates double NOT NULL,
+ 	farm double NOT NULL,
+  	controle_visao double NOT NULL,
+  	sentinelas_compradas double NOT NULL,
+  	dano double NOT NULL,
+  	abates double NOT NULL,
+  	mortes double NOT NULL,
+  	assist double NOT NULL,
+  	KDA double NOT NULL,
+  	ultima_scrim int(11) NOT NULL,
+  	status varchar(50) NOT NULL);
+
+CREATE TABLE estatistica(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	nick varchar(50) NOT NULL,
+  	posicao varchar(20) NOT NULL,
+  	vitoria double NOT NULL,
+	vitoria_porcentagem double NOT NULL,
+  	jogos int(11) NOT NULL,
+  	particicao_de_abates double NOT NULL,
+ 	farm double NOT NULL,
+  	controle_visao double NOT NULL,
+  	sentinelas_compradas double NOT NULL,
+  	dano double NOT NULL,
+  	abates double NOT NULL,
+  	mortes double NOT NULL,
+  	assist double NOT NULL,
+  	KDA double NOT NULL,
+  	ultima_scrim int(11) NOT NULL,
+  	status varchar(50) NOT NULL);
+
+CREATE TABLE jg(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	nick varchar(50) NOT NULL,
+  	posicao varchar(20) NOT NULL,
+  	vitoria double NOT NULL,
+	vitoria_porcentagem double NOT NULL,
+  	jogos int(11) NOT NULL,
+  	particicao_de_abates double NOT NULL,
+ 	farm double NOT NULL,
+  	controle_visao double NOT NULL,
+  	sentinelas_compradas double NOT NULL,
+  	dano double NOT NULL,
+  	abates double NOT NULL,
+  	mortes double NOT NULL,
+  	assist double NOT NULL,
+  	KDA double NOT NULL,
+  	ultima_scrim int(11) NOT NULL,
+  	status varchar(50) NOT NULL);
+CREATE TABLE sup(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	nick varchar(50) NOT NULL,
+  	posicao varchar(20) NOT NULL,
+  	vitoria double NOT NULL,
+	vitoria_porcentagem double NOT NULL,
+  	jogos int(11) NOT NULL,
+  	particicao_de_abates double NOT NULL,
+ 	farm double NOT NULL,
+  	controle_visao double NOT NULL,
+  	sentinelas_compradas double NOT NULL,
+  	dano double NOT NULL,
+  	abates double NOT NULL,
+  	mortes double NOT NULL,
+  	assist double NOT NULL,
+  	KDA double NOT NULL,
+  	ultima_scrim int(11) NOT NULL,
+  	status varchar(50) NOT NULL);
+CREATE TABLE adc(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	nick varchar(50) NOT NULL,
+  	posicao varchar(20) NOT NULL,
+   	vitoria double NOT NULL,
+	vitoria_porcentagem double NOT NULL,
+  	jogos int(11) NOT NULL,
+  	particicao_de_abates double NOT NULL,
+ 	farm double NOT NULL,
+  	controle_visao double NOT NULL,
+  	sentinelas_compradas double NOT NULL,
+  	dano double NOT NULL,
+  	abates double NOT NULL,
+  	mortes double NOT NULL,
+  	assist double NOT NULL,
+  	KDA double NOT NULL,
+  	ultima_scrim int(11) NOT NULL,
+  	status varchar(50) NOT NULL);
+
+INSERT INTO jogador VALUES (null, 'Nick', 'TOP', 'JG');
+INSERT INTO usuario VALUES (null,'henriqueacker@gmail.com', '123456', 'Nick');
+
+
